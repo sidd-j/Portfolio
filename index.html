@@ -1,190 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Unkindled Developer - Unity & Flutter Developer Portfolio</title>
-    <meta name="description"
-        content="Portfolio of a Unity & Flutter Developer specializing in 3D game mechanics, mobile app development, and immersive gameplay experiences.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Crimson+Text:wght@400;600&display=swap"
-        rel="stylesheet">
+    <title>Game Developer Portfolio | Unity & Mobile Development</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Crimson+Text:wght@400;600&display=swap" rel="stylesheet">
 </head>
-
 <body>
     <!-- Navigation -->
-    <nav class="nav-header" id="nav-header">
+    <nav class="rpg-nav">
         <div class="nav-container">
             <div class="nav-brand">
-                <span class="bonfire-icon">🔥</span>
-                <span class="nav-title">Unkindled Dev</span>
+                <span class="brand-text">Game Developer</span>
             </div>
-            <ul class="nav-menu" id="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link active" data-section="home"><span
-                            class="nav-icon">🔥</span><span>Home</span></a></li>
-                <li class="nav-item"><a href="#about" class="nav-link" data-section="about"><span
-                            class="nav-icon">🛡️</span><span>About</span></a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link" data-section="skills"><span
-                            class="nav-icon">⚔️</span><span>Skills</span></a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link" data-section="projects"><span
-                            class="nav-icon">📜</span><span>Projects</span></a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link" data-section="contact"><span
-                            class="nav-icon">✨</span><span>Contact</span></a></li>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">Character</a></li>
+                <li><a href="#skills" class="nav-link">Abilities</a></li>
+                <li><a href="#projects" class="nav-link">Quests</a></li>
+                <li><a href="#experience" class="nav-link">Journal</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="nav-toggle-line"></span>
-                <span class="nav-toggle-line"></span>
-                <span class="nav-toggle-line"></span>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section" id="home">
-        <div class="hero-background">
-            <div class="hero-particles" id="hero-particles"></div>
-            <div class="hero-bonfire">
-                <img src="https://pplx-res.cloudinary.com/image/upload/v1755022217/pplx_project_search_images/8153e7b98a9d68c64b20a21f6c62071336689308.png"
-                    alt="Dark Souls Bonfire" class="bonfire-image">
-            </div>
-        </div>
+    <section id="hero" class="hero">
         <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">The Unkindled Developer</h1>
-                <p class="hero-subtitle">Forging Interactive Worlds & Powerful Apps</p>
-                <p class="hero-description">Unity & Flutter Developer with expertise in 3D game mechanics, mobile app
-                    development, and immersive player experiences. From crafting responsive game controllers to building
-                    production-ready mobile applications, I bring worlds to life through code.</p>
-                <div class="hero-quote"><em>"May the code compile on first try."</em></div>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Light the Bonfire</a>
+            <div class="hero-particles"></div>
+            <h1 class="hero-title">Game Developer Portfolio</h1>
+            <h2 class="hero-subtitle">Unity 3D & Mobile App Developer</h2>
+            <p class="hero-description">Crafting immersive experiences through code and creativity</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Unity Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">6+</span>
+                    <span class="stat-label">Flutter Apps</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">BSc CS</span>
+                    <span class="stat-label">Education</span>
                 </div>
             </div>
-        </div>
-        <div class="hero-scroll-indicator">
-            <span class="scroll-text">Scroll to Explore</span>
-            <div class="scroll-arrow">↓</div>
+            <a href="#about" class="cta-button">Begin Quest</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section class="about-section section" id="about">
+    <section id="about" class="about">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">The Journey Begins</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>From Game Testing to Full-Stack Creation</h3>
-                    <p>With a BSc in Computer Science and 6 months of professional experience as a Game Tester at
-                        Rendered Ideas, I developed a strong eye for detail, gameplay balance, and player experience.
-                        Testing honed my understanding of what makes games not only functional but memorable.</p>
-                    <p>Now, as a Unity & Flutter Developer, I build 3D character controllers, complex game mechanics,
-                        and production-ready mobile applications. I’ve delivered real-world projects — including a
-                        startup’s laundry service app (iOS & Android) with a custom order management backend, and
-                        multiple Unity projects featuring AI systems, day-night cycles, and responsive UI systems.</p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <div class="stat-number">6+</div>
-                            <div class="stat-label">Months Industry Experience</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Unity Projects</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">6+</div>
-                            <div class="stat-label">Flutter Apps</div>
+            <h2 class="section-title">Character Sheet</h2>
+            <div class="character-sheet">
+                <div class="character-info">
+                    <div class="character-card">
+                        <h3>Game Developer</h3>
+                        <div class="character-details">
+                            <div class="detail-row">
+                                <span class="detail-label">Class:</span>
+                                <span class="detail-value">Unity 3D & Mobile App Developer</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Education:</span>
+                                <span class="detail-value">Bachelor of Science in Computer Science</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Current Role:</span>
+                                <span class="detail-value">Game Tester - Rendered Ideas</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Experience:</span>
+                                <span class="detail-value">6 months</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <div class="knight-silhouette">
-                        <img src="https://pplx-res.cloudinary.com/image/upload/v1755022217/pplx_project_search_images/89c7f24e875356e4d5bdd30c44e09297bd377b02.png"
-                            alt="Elite Knight" class="knight-img">
-                    </div>
+                <div class="character-description">
+                    <h4>Background</h4>
+                    <p>A dedicated game developer with expertise in Unity 3D game development and cross-platform mobile applications. Currently honing skills as a Game Tester at Rendered Ideas, specializing in QA testing, gameplay balance evaluation, and user experience optimization.</p>
+                    <p>With a strong foundation in Computer Science and hands-on experience in both game development and mobile app creation, I bring technical proficiency and creative problem-solving to every project.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section class="skills-section section" id="skills">
+    <section id="skills" class="skills">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Arsenal of Knowledge</h2>
-                <div class="section-divider"></div>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="category-title">Game Development</h3>
-                    <div class="skills-list">
+            <h2 class="section-title">Skill Trees</h2>
+            <div class="skill-trees">
+                <!-- Game Development Skills -->
+                <div class="skill-tree">
+                    <h3 class="tree-title">Game Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item" data-level="95">
+                            <div class="skill-info">
+                                <span class="skill-name">Unity 3D</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
                         <div class="skill-item" data-level="90">
-                            <div class="skill-header"><span class="skill-icon">🎮</span><span class="skill-name">Unity
-                                    3D</span><span class="skill-level">90%</span></div>
+                            <div class="skill-info">
+                                <span class="skill-name">C# Programming</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 90%"></div>
                             </div>
                         </div>
                         <div class="skill-item" data-level="85">
-                            <div class="skill-header"><span class="skill-icon">💻</span><span class="skill-name">C#
-                                    Programming</span><span class="skill-level">85%</span></div>
+                            <div class="skill-info">
+                                <span class="skill-name">3D Character Controllers</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-level="88">
-                            <div class="skill-header"><span class="skill-icon">🏃</span><span
-                                    class="skill-name">Character Controllers</span><span class="skill-level">88%</span>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">AI Systems & State Machines</span>
+                                <span class="skill-level">Advanced</span>
                             </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item" data-level="82">
-                            <div class="skill-header"><span class="skill-icon">⚙️</span><span class="skill-name">Game
-                                    Mechanics</span><span class="skill-level">82%</span></div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%"></div>
+                                <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3 class="category-title">App Development</h3>
-                    <div class="skills-list">
-                        <div class="skill-item" data-level="88">
-                            <div class="skill-header"><span class="skill-icon">📱</span><span
-                                    class="skill-name">Flutter</span><span class="skill-level">88%</span></div>
+
+                <!-- Mobile Development Skills -->
+                <div class="skill-tree">
+                    <h3 class="tree-title">Mobile Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info">
+                                <span class="skill-name">Flutter</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Cross-platform Development</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
                             </div>
                         </div>
                         <div class="skill-item" data-level="80">
-                            <div class="skill-header"><span class="skill-icon">🌐</span><span class="skill-name">API
-                                    Integration</span><span class="skill-level">80%</span></div>
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js Backend</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
                             <div class="skill-bar">
                                 <div class="skill-progress" style="width: 80%"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-level="78">
-                            <div class="skill-header"><span class="skill-icon">🗄️</span><span
-                                    class="skill-name">Node.js Backend</span><span class="skill-level">78%</span></div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-info">
+                                <span class="skill-name">Firebase Authentication</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 78%"></div>
+                                <div class="skill-progress" style="width: 80%"></div>
                             </div>
                         </div>
-                        <div class="skill-item" data-level="75">
-                            <div class="skill-header"><span class="skill-icon">🗃️</span><span
-                                    class="skill-name">PostgreSQL</span><span class="skill-level">75%</span></div>
+                    </div>
+                </div>
+
+                <!-- General Skills -->
+                <div class="skill-tree">
+                    <h3 class="tree-title">General Abilities</h3>
+                    <div class="skill-list">
+                        <div class="skill-item" data-level="95">
+                            <div class="skill-info">
+                                <span class="skill-name">Problem Solving</span>
+                                <span class="skill-level">Expert</span>
+                            </div>
                             <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Responsive Design</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Git/GitHub</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-info">
+                                <span class="skill-name">UI/UX Implementation</span>
+                                <span class="skill-level">Advanced</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
                             </div>
                         </div>
                     </div>
@@ -194,61 +230,192 @@
     </section>
 
     <!-- Projects Section -->
-    <section class="projects-section section" id="projects">
+    <section id="projects" class="projects">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Completed Quests</h2>
-                <div class="section-divider"></div>
+            <h2 class="section-title">Quest Log</h2>
+            <div class="quest-grid">
+                <div class="quest-card">
+                    <div class="quest-header">
+                        <h3 class="quest-title">Laundry Service App</h3>
+                        <span class="quest-status production">Production Ready</span>
+                    </div>
+                    <div class="quest-type">Mobile Application</div>
+                    <p class="quest-description">Full-stack mobile application for laundry service management with order tracking and payment processing.</p>
+                    <div class="quest-features">
+                        <ul>
+                            <li>Order placement & tracking system</li>
+                            <li>Integrated payment gateway</li>
+                            <li>Admin dashboard for service management</li>
+                            <li>Cross-platform iOS & Android support</li>
+                        </ul>
+                    </div>
+                    <div class="quest-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="quest-card">
+                    <div class="quest-header">
+                        <h3 class="quest-title">3D Action RPG Prototype</h3>
+                        <span class="quest-status prototype">Advanced Prototype</span>
+                    </div>
+                    <div class="quest-type">Game Development</div>
+                    <p class="quest-description">Immersive 3D action RPG featuring intelligent AI enemies, dynamic environmental systems, and custom player mechanics.</p>
+                    <div class="quest-features">
+                        <ul>
+                            <li>AI enemies with state machine behaviors</li>
+                            <li>Dynamic day-night cycle system</li>
+                            <li>Custom 3D character controller</li>
+                            <li>Environmental particle effects</li>
+                        </ul>
+                    </div>
+                    <div class="quest-tech">
+                        <span class="tech-tag">Unity 3D</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">AI Navigation</span>
+                    </div>
+                </div>
+
+                <div class="quest-card">
+                    <div class="quest-header">
+                        <h3 class="quest-title">E-Commerce Mobile App</h3>
+                        <span class="quest-status complete">Complete</span>
+                    </div>
+                    <div class="quest-type">Mobile Application</div>
+                    <p class="quest-description">Feature-rich e-commerce application with modern UI/UX and real-time data synchronization.</p>
+                    <div class="quest-features">
+                        <ul>
+                            <li>Firebase authentication system</li>
+                            <li>Advanced product filtering</li>
+                            <li>Shopping cart & checkout flow</li>
+                            <li>Real-time inventory updates</li>
+                        </ul>
+                    </div>
+                    <div class="quest-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Authentication</span>
+                    </div>
+                </div>
+
+                <div class="quest-card">
+                    <div class="quest-header">
+                        <h3 class="quest-title">Procedural Platformer Game</h3>
+                        <span class="quest-status complete">Complete</span>
+                    </div>
+                    <div class="quest-type">Game Development</div>
+                    <p class="quest-description">Innovative 2D platformer featuring procedural level generation and physics-based puzzle mechanics.</p>
+                    <div class="quest-features">
+                        <ul>
+                            <li>Procedural level generation algorithms</li>
+                            <li>Multiple playable characters</li>
+                            <li>Physics-based puzzle mechanics</li>
+                            <li>Dynamic difficulty scaling</li>
+                        </ul>
+                    </div>
+                    <div class="quest-tech">
+                        <span class="tech-tag">Unity 2D</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Procedural Generation</span>
+                    </div>
+                </div>
             </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3 class="project-title">Laundry Service App</h3>
-                    <p class="project-description">Cross-platform Flutter app with a Node.js backend for a startup
-                        laundry service. Includes user authentication, real-time order tracking, payment gateway
-                        integration, and a custom admin dashboard.</p>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience Journal</h2>
+            <div class="journal-entry">
+                <div class="entry-header">
+                    <h3>Game Tester</h3>
+                    <span class="company">Rendered Ideas</span>
+                    <span class="duration">6 months</span>
                 </div>
-                <div class="project-card">
-                    <h3 class="project-title">3D Action RPG Prototype</h3>
-                    <p class="project-description">Unity 3D project featuring custom character controllers, AI enemies
-                        with state machines, day-night cycles, and immersive particle effects.</p>
+                <div class="entry-content">
+                    <h4>Responsibilities & Achievements:</h4>
+                    <ul class="responsibility-list">
+                        <li>QA testing of mobile games across multiple platforms</li>
+                        <li>Gameplay balance evaluation and feedback documentation</li>
+                        <li>Bug identification and detailed reporting for development teams</li>
+                        <li>User experience analysis and improvement recommendations</li>
+                        <li>Cross-platform compatibility testing (iOS/Android)</li>
+                        <li>Performance optimization testing and reporting</li>
+                    </ul>
                 </div>
-                <div class="project-card">
-                    <h3 class="project-title">E-Commerce Flutter App</h3>
-                    <p class="project-description">Mobile e-commerce platform with integrated cart, checkout, and
-                        product filtering features. Backend powered by Firebase with secure user authentication.</p>
-                </div>
-                <div class="project-card">
-                    <h3 class="project-title">Platformer Game with Procedural Levels</h3>
-                    <p class="project-description">Unity 2D side-scroller with procedural level generation,
-                        physics-based puzzles, and multiple playable characters.</p>
+            </div>
+            <div class="project-summary">
+                <h4>Project Portfolio Summary:</h4>
+                <div class="summary-stats">
+                    <div class="summary-item">
+                        <span class="summary-number">15+</span>
+                        <span class="summary-label">Unity Projects Completed</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">6+</span>
+                        <span class="summary-label">Flutter Applications Built</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-number">100%</span>
+                        <span class="summary-label">Production-Ready Quality</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact-section section" id="contact">
+    <section id="contact" class="contact">
         <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Light the Bonfire</h2>
-                <div class="section-divider"></div>
-            </div>
+            <h2 class="section-title">Send Message</h2>
             <div class="contact-content">
-                <p>If you wish to summon me for your next project or discuss creative quests, reach out below:</p>
-                <ul class="contact-list">
-                    <li><strong>Email:</strong> your.email@example.com</li>
-                    <li><strong>LinkedIn:</strong> linkedin.com/in/yourprofile</li>
-                    <li><strong>GitHub:</strong> github.com/yourusername</li>
-                </ul>
+                <div class="contact-info">
+                    <h3>Begin Your Quest</h3>
+                    <p>Ready to collaborate on your next project? Whether you need a game developed, a mobile app created, or technical expertise in Unity 3D and Flutter, let's connect and bring your ideas to life.</p>
+                    <div class="contact-links">
+                        <a href="mailto:developer@example.com" class="contact-link" target="_blank">Email</a>
+                        <a href="https://linkedin.com/in/developer" class="contact-link" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/developer" class="contact-link" target="_blank">GitHub</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="project" class="form-label">Project Type</label>
+                        <select id="project" name="project" class="form-control">
+                            <option value="">Select project type</option>
+                            <option value="game">Game Development</option>
+                            <option value="mobile">Mobile App Development</option>
+                            <option value="consultation">Technical Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--full-width">Send Quest Request</button>
+                </form>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <p>© 2025 The Unkindled Developer. Kindled with code and caffeine.</p>
+        <div class="container">
+            <p>&copy; 2025 Game Developer Portfolio. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
-
 </html>
